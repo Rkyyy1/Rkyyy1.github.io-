@@ -1,0 +1,802 @@
+*  { 
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration-line: none;
+    background-color: rgb(0, 7, 37);
+    width: 100%;
+}
+html {
+    height: 3300px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: rgb(0, 7, 37);
+    --primary: rgb(0, 76, 218);
+    --text: white;
+}
+
+/* navbar */
+.navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    animation: animasinavbar 1s ease forwards;
+}
+.navbar div {
+    background-color: transparent;
+    width: 15%;
+    display: flex;
+    justify-content: left;
+    height: 100%;
+    padding-left: 10px;
+}
+.navbar div a {
+    font-weight: 600;
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--text);
+    height: 100%;
+}
+.navbar nav {
+    background-color: transparent;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar nav a {
+    color: var(--text);
+    font-size: 1.5rem;
+    padding-top: 10px;
+    background-color: transparent;
+    height: 70%;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.menu {
+    display: none;
+}
+.navbar nav a:hover {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+/* navbar */
+
+
+
+
+
+
+/* judul */
+.judul {
+    background-color: transparent;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.judul h1 {
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 150px;
+    margin-left: 50px;
+    animation: animasijudul 1s ease forwards;
+    width: 400px;;
+}
+.judul h2 {
+    color: var(--primary);
+    animation: animasijudul 1.5s ease forwards;
+    font-size: 2rem;
+    display: inline-block;
+    width: 500px;
+}
+.judul p {
+    color: white;
+    animation: animasijudul 2s ease forwards;
+    background-color: transparent;
+    display: inline-block;
+    width: 500px;
+    font-size: 1rem;
+}
+.judul .foto {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    position: relative;
+    left: 700px;
+    top: -350px;
+}
+.judul a {
+    color: white;
+    margin-top: 50px;
+    margin-left: 150px;
+    font-size: 1.5rem;
+    background-color: var(--bg);
+    border: 3px solid var(--primary);
+    transition: 0.5s;
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    padding-top: px;
+    padding-left: 20px;
+    border-radius: 20px;
+    animation: animasijudul 2.5s ease forwards;
+}
+.judul a:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+}
+/* judul */
+
+
+
+
+
+
+/* about */
+.about_head {
+    background-color: transparent;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about_head h1 {
+    color: white;
+    display: inline-block;
+    background-color: transparent;
+    height: 70px;
+    width: 40%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: 5px solid white;
+    padding-top: 15px;
+}
+.about_page {
+    background-color: transparent;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.about_page div {
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    animation: animasiaboutkiri 3s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.about_page p {
+    background-color: transparent;
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+/* about */
+
+
+
+
+
+/* social media */
+.social_head {
+    background-color: transparent;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social_head h1 {
+    color: white;
+    display: inline-block;
+    background-color: transparent;
+    height: 70px;
+    width: 40%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: 5px solid white;
+    padding-top: 15px;
+}
+.social_page {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+}
+.social_page1 {
+    background-color: transparent;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social_page2 {
+    background-color: transparent;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social_page1 div {
+    background-color: var(--bg);
+    height: 100px;
+    width: 70%;
+    text-align: center;
+    margin-top: 200px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    animation: social_instagram 2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry o cover 40%;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+.social_page1 a {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+    width: 80%;
+    height: 40%;
+}
+.social_page2 div {
+    background-color: var(--bg);
+    height: 100px;
+    width: 70%;
+    text-align: center;
+    margin-top: 200px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    animation: social_facebook 2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry o cover 40%;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+.social_page2 a {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+    width: 80%;
+
+}
+.social_page2 div:hover {
+    border: 5px solid var(--primary);
+    transform: scale(0.8);
+
+}
+.social_page2 a:hover {
+    color: var(--primary);
+}
+.social_page1 div:hover {
+    border: 5px solid var(--primary);
+    transform: scale(0.8);
+}
+.social_page1 a:hover {
+    color: var(--primary);
+}
+.socialfooter {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+}
+.socialfooter h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    background-color: transparent;
+}
+.igicon {
+    width: 40px;
+    height: 40px;
+}
+.fbicon {
+    width: 40px;
+    height: 40px;
+}
+/* social */
+
+
+
+
+
+/* photos */
+.photos_head {
+    display: flex;
+    justify-content: center;
+}
+.myphotos h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 4px solid white;
+    width: 300px;
+    display: inline-block;
+}
+.foto_page {
+    width: 100%;
+    height: 1000px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foto_page div {
+    background-color: transparent;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 3px solid var(--text);
+    border-radius: 20%;
+    animation: foto 1s ease forwards;
+    animation-timeline: view();
+
+}
+.foto_page img {
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20%;
+}
+/* photos */
+
+
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background: rgb(0,7,37);
+    background: linear-gradient(180deg, rgba(0,7,37,1) 0%, rgba(0,76,218,1) 60%);
+}
+footer p {
+    color: var(--text);
+    margin-top: 50px;
+    margin-left: 40px;
+    display: inline-block;
+    width: 40%;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media breakpoints */
+@media screen and (max-width:1024px) {
+    .navbar nav a {
+        font-size: 1rem;
+        height: 60%;
+    }
+    .navbar div a {
+        font-size: 2rem;
+    }
+    .judul p {
+        width: 500px;
+    }
+    .judul .foto {
+        width: 200px;
+        height: 200px;
+        left: 70%;
+    }
+    .fotogua {
+        width: 200px;
+        height: 200px;
+    }
+    .judul h1 {
+        animation: animasijudul2 1s ease forwards;
+    }
+    .judul h2 {
+        animation: animasijudul2 1.5s ease forwards;
+    }
+    .judul p {
+        animation: animasijudul2 2s ease forwards;
+    }.judul a {
+        animation: animasijudul2 2.5s ease forwards;
+    }
+    .about_page div {
+        height: 300px;
+        width: 400px;
+    }
+    .about_page p {
+        font-size: 1rem;
+    }
+    .social_page1 a {
+        font-size: 2rem;
+    }
+    .social_page2 a {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .judul .foto {
+        left: 50px;
+        top: -550px;
+    }
+    .judul h1 {
+        font-size: 2.5rem;
+        margin-top: 300px;
+    }
+    .about_page div {
+        width: 300px;
+    }
+    .social_page1 a {
+        font-size: 1.5rem;
+    }
+    .social_page2 a {
+        font-size: 1.5rem;
+    }
+    .foto_page {
+        height: 750px;
+    }
+    .foto_page div {
+        width: 200px;
+        height: 200px;
+    }
+    .foto_page img {
+        width: 180px;
+        height: 180px;
+    }
+    html {
+        height: 3000px;
+    }
+}
+@media screen and (max-width:650px) {
+    .about_page {
+        flex-direction: column;
+        height: 700px;
+    }
+    .about_page div {
+        margin-left: 25%;
+    }
+    .about_head h1 {
+        font-size: 2rem;
+    }
+    .judul h2 {
+        width: 300px;
+    }
+    .judul {
+        height: 800px;
+    }
+    .judul p {
+        width: 370px;
+    }
+    .judul .foto {
+        top: -600px;
+    }
+    .judul h1 {
+        width: 300px;
+    }
+    .social_head h1 {
+        font-size: 2rem;
+        height: 100px;
+    }
+    .social_page1 a {
+        font-size: 1.5rem;
+    }
+    .social_page1 {
+        margin-top: 50px;
+    }
+    .social_page1 div {
+        margin-top: 100px;
+    }
+    .social_page2 a {
+        font-size: 1.5rem;
+    }
+    .social_page2 {
+        margin-top: 50px;
+    }
+    .social_page2 div {
+        margin-top: 100px;
+    }
+    .igicon {
+        width: 20px;
+        height: 20px;
+    }
+    .fbicon {
+        width: 20px;
+        height: 20px;
+    }
+    .socialfooter h2 {
+        font-size: 1.5rem;
+    }
+    .foto_page {
+        height: 800px;
+    }
+    .foto_page div {
+        width: 180px;
+        height: 180px;
+    }
+    .foto_page img {
+        width: 160px;
+        height: 160px;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+     .contact {
+        display: none;
+     }
+     .about {
+        display: none;
+     }
+     .social {
+        display: none;
+     }
+     .menu {
+        display:inline;
+        width: 50px;
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        font-size: 1.5rem;
+     }
+     .navbar nav {
+        justify-content: right;
+     }
+     .about_page div {
+        margin-left: 15%;
+     }
+     .about_head h1 {
+        width: 60%;
+     }
+     .instagram {
+        display: none;
+     }
+     .facebook {
+        display: none;
+     }
+     .fbicon {
+        width: 90%;
+        height: 80%;
+     }
+     .igicon {
+        width: 100%;
+        height: 100%;
+     }
+     .foto_page {
+        height: 500px;
+    }
+    .foto_page div {
+        width: 120px;
+        height: 120px;
+
+    }
+    .foto_page img {
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .judul {
+        height: 800px;
+    }
+    .judul p {
+        width: 300px;
+    }
+    .judul .foto {
+        top: -650px;
+    }
+    .about_page div {
+        width: 70%;
+        height: px;
+    }
+    .about_page {
+        height: 850px;
+    }
+    footer p {
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width:375px) {
+    .judul h1 {
+        font-size: 2rem;
+        width: 250px;
+    }
+    .judul h2 {
+        font-size: 1.5rem;
+        width: 250px;
+    }
+    .judul p {
+        font-size: 1rem;
+        width: 250px;
+    }
+    .about_page div {
+        width: 70%;
+        height: 325px;
+    }
+    .social_head h1 {
+        height: 150px;
+        background-color: transparent;
+    }
+    .foto_page div {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .judul h1 {
+        font-size: 2rem;
+    }
+    .about_page div {
+        width: 70%;
+        height: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+@keyframes animasijudul {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 150px;
+    }
+}
+@keyframes animasinavbar {
+    from {
+        margin-top: -40px
+    }
+    to {
+        margin-top: 0;
+    }
+}
+@keyframes animasijudul2 {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 50px;
+    }
+}
+@keyframes animasiaboutkiri {
+    from {
+        scale: 30%;
+    }
+    to {
+        scale: 100%;
+    }
+}
+@keyframes social_facebook {
+    from {
+        margin-right: -300px;
+    }
+    to {
+        margin-right: 0;
+    }
+}
+@keyframes social_instagram {
+    from {
+        margin-left: -300px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+@keyframes foto {
+    from{
+        scale: 0.5;
+        opacity: 0.2;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
